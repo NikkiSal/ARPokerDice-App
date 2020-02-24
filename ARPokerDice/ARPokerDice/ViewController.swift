@@ -8,7 +8,7 @@ class ViewController: UIViewController {
     
     //MARK: - Properties
     
-    var trackingStatus : String = ""
+    var trackingStatus: String = ""
     
     //MARK: - Outlets
     
@@ -104,6 +104,8 @@ extension ViewController: ARSCNViewDelegate {
             case .excessiveMotion:
                 trackingStatus = "Tracking: Limited due to excessie motion!"
             case .insufficientFeatures:
+                trackingStatus = "Tracking: Limited due to insufficient features!"
+            case .initializing:
                 trackingStatus = "Tracking: Initializing..."
             case .relocalizing:
                 trackingStatus = "Tracking: Relocalizing..."
