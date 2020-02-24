@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARPokerDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHc-Ph-EpC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wsG-eZ-Xmd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-ak-hhT" userLabel="StatusLabel">
+                                            <rect key="frame" x="8" y="0.0" width="398" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="vk7-ak-hhT" secondAttribute="trailing" constant="8" id="2bd-8c-QXL"/>
+                                        <constraint firstItem="vk7-ak-hhT" firstAttribute="leading" secondItem="wsG-eZ-Xmd" secondAttribute="leading" constant="8" id="Vif-DM-QJo"/>
+                                        <constraint firstAttribute="bottom" secondItem="vk7-ak-hhT" secondAttribute="bottom" id="dsb-ue-lXd"/>
+                                        <constraint firstItem="vk7-ak-hhT" firstAttribute="top" secondItem="wsG-eZ-Xmd" secondAttribute="top" id="pAK-4G-63d"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MKC-Ck-hde"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-Ww-EDa">
+                                <rect key="frame" x="16" y="102" width="60" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="65F-gl-HzI"/>
+                                    <constraint firstAttribute="height" constant="40" id="tlK-4p-ZNE"/>
+                                </constraints>
+                                <state key="normal" title="STYLE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="styleButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Yka-OZ-6dh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32Y-Yf-Uvu" userLabel="ResetButton">
+                                <rect key="frame" x="338" y="102" width="60" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="2dJ-fF-OjL"/>
+                                    <constraint firstAttribute="height" constant="40" id="TW3-i3-qvC"/>
+                                </constraints>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="styleButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xhA-ur-YKs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="32Y-Yf-Uvu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U0K-SW-4ec" secondAttribute="leading" constant="20" symbolic="YES" id="2ED-B1-SgZ"/>
+                            <constraint firstItem="IHc-Ph-EpC" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="63d-9A-2gc"/>
+                            <constraint firstItem="dcn-Ww-EDa" firstAttribute="top" secondItem="IHc-Ph-EpC" secondAttribute="bottom" constant="8" id="BCI-DV-zZd"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dcn-Ww-EDa" secondAttribute="trailing" constant="338" id="UJa-9i-8uZ"/>
+                            <constraint firstItem="IHc-Ph-EpC" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="VfT-WK-oao"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="dcn-Ww-EDa" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="16" id="VpZ-Zk-r5j"/>
+                            <constraint firstItem="32Y-Yf-Uvu" firstAttribute="top" secondItem="IHc-Ph-EpC" secondAttribute="bottom" constant="8" id="W0s-EW-eqp"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="IHc-Ph-EpC" secondAttribute="trailing" id="Xnn-1n-frK"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="32Y-Yf-Uvu" secondAttribute="trailing" constant="16" id="hyP-Ra-fji"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="statusLabel" destination="vk7-ak-hhT" id="ea7-rX-PZI"/>
+                        <outlet property="styleButton" destination="dcn-Ww-EDa" id="P5c-UQ-7LY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="120"/>
+        </scene>
+    </scenes>
+</document>
