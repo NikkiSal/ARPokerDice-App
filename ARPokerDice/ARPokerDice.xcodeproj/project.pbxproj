@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1B33D02405EC9B006CBBC8 /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B33CC2405EC9B006CBBC8 /* GameUtils.swift */; };
+		8D1B33D12405EC9B006CBBC8 /* SCNVector3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B33CD2405EC9B006CBBC8 /* SCNVector3+Extension.swift */; };
+		8D1B33D22405EC9B006CBBC8 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B33CE2405EC9B006CBBC8 /* Generics.swift */; };
+		8D1B33D32405EC9B006CBBC8 /* Random+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B33CF2405EC9B006CBBC8 /* Random+Extension.swift */; };
 		8D83586A24021BE00079A52D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D83586924021BE00079A52D /* AppDelegate.swift */; };
 		8D83586E24021BE00079A52D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D83586D24021BE00079A52D /* ViewController.swift */; };
 		8D83587124021BE00079A52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D83586F24021BE00079A52D /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D1B33CC2405EC9B006CBBC8 /* GameUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
+		8D1B33CD2405EC9B006CBBC8 /* SCNVector3+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extension.swift"; sourceTree = "<group>"; };
+		8D1B33CE2405EC9B006CBBC8 /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		8D1B33CF2405EC9B006CBBC8 /* Random+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Random+Extension.swift"; sourceTree = "<group>"; };
 		8D83586624021BE00079A52D /* ARPokerDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPokerDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D83586924021BE00079A52D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D83586D24021BE00079A52D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D1B33CB2405EC9B006CBBC8 /* GameUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8D1B33CC2405EC9B006CBBC8 /* GameUtils.swift */,
+				8D1B33CD2405EC9B006CBBC8 /* SCNVector3+Extension.swift */,
+				8D1B33CE2405EC9B006CBBC8 /* Generics.swift */,
+				8D1B33CF2405EC9B006CBBC8 /* Random+Extension.swift */,
+			);
+			path = GameUtils;
+			sourceTree = "<group>";
+		};
 		8D83585D24021BE00079A52D = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +75,7 @@
 		8D83586824021BE00079A52D /* ARPokerDice */ = {
 			isa = PBXGroup;
 			children = (
+				8D1B33CB2405EC9B006CBBC8 /* GameUtils */,
 				8D83587D240225E70079A52D /* PokerDice.scnassets */,
 				8D83586924021BE00079A52D /* AppDelegate.swift */,
 				8D83586D24021BE00079A52D /* ViewController.swift */,
@@ -140,7 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D83586E24021BE00079A52D /* ViewController.swift in Sources */,
+				8D1B33D02405EC9B006CBBC8 /* GameUtils.swift in Sources */,
+				8D1B33D22405EC9B006CBBC8 /* Generics.swift in Sources */,
 				8D83586A24021BE00079A52D /* AppDelegate.swift in Sources */,
+				8D1B33D32405EC9B006CBBC8 /* Random+Extension.swift in Sources */,
+				8D1B33D12405EC9B006CBBC8 /* SCNVector3+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
